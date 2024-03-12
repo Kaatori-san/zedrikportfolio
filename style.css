@@ -2,10 +2,21 @@
     max-width: 100%;
     padding: 0;
     margin: 0;
+    -webkit-appearance:  none;
+    -moz-appearance:  none;
+    appearance:  none;
 }
 .custom-nav{
-    background: hsl(241, 59%, 15%);
-    width: 100%;
+    .navbar-inner{
+        background: #65000b;
+        width: 100%;
+    }
+    .navbar-brand{
+        margin-left: 5%;
+    }
+    #navbarNavAltMarkup{
+        margin-right: 5rem;
+    }
 }
 .logo{
     height: 40px;
@@ -17,20 +28,31 @@
 
 }
 .title{
-    color: #11103f;
+    color: #65000b;
     text-align: center;
 }
+#home{
+    margin-top: 3rem;
+}
 .custom-card{
-    box-shadow: 1px 2px 5px rgb(75, 75, 75);
+    box-shadow: 1px 2px 5px rgb(58, 3, 3);
     border-radius: 12px;
-    animation-delay: 1s;
+    animation-delay: 5s;
+    height: 500px;
+    background-color: rgb(248, 248, 248);
 }
 .custom-card img{
-    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.custom-card-1{
+    box-shadow: 1px 2px 10px 0px rgb(58 3 3);
+    border-radius: 12px;
 }
 .btn-1{
     padding: 8px 20px;
-    background: #11103f;
+    background: #65000b;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -39,18 +61,17 @@
 .small{
     font-size: 20px;
 }
-.custom-card-1{
-    box-shadow: 1px 2px 10px 0px rgb(94 94 94);
-    border-radius: 12px;
-}
 
 footer i{
-    color: #11103f;
+    color: #65000b;
     transition: all .4s;
 }
 footer i:hover{
-    color:  #6c63ff;
+    color:  #af002a;
 }
 .space{
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
+}
+#about{
+    margin-top: 15rem;
 }

@@ -5,10 +5,14 @@
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- normalize.css -->
+  <link href="https://unpkg.com/normalize.css@8.0.1/" rel="stylesheet" >
   <!-- animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -16,14 +20,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Background -->
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+  </style>
+
+  <!-- Title  -->
   <title>Zedrik's Portfolio</title>
 </head>
 
+<!-- start of body -->
 <body>
   <header class="">
-    <!-- nav bar  -->
+    <!-- navbar  -->
     <div class="custom-nav">
-      <nav class="container navbar navbar-expand-lg navbar-dark">
+      <nav class=" navbar fixed-top navbar-expand-lg navbar-dark navbar-inner">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <h1>Zedrik's Portfolio</h1>
@@ -34,7 +48,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
               <a class="nav-link" href="#about">About</a>
             </div>
           </div>
@@ -44,69 +58,101 @@
     <div id="home" class="container">
       <div class="row m-0 p-5">
         <div data-aos-duration="1000" data-aos="fade-left" class="col-lg-6 my-6">
-          <img class="img-fluid pt-5" id="header" src="imges/header-1.jpg" alt="">
+          <img class="img-fluid pt-5" id="header" src="images/header-1.jpg" alt="">
         </div>
         <div  data-aos-duration="1000" data-aos="fade-right" class="col-lg-6 py-4 my-auto">
           <h1>
             ZEDRIK DY
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo aperiam reiciendis et facilis sit
-            voluptates ea rem atque quae!</p>
-            <button class="btn-1">Read More</button>
+          <p class="pt-3">
+            Hi! My name is Kurt Zedrik Dy and I am an Information Technology student of FEU Alabang who is passionate about web and mobile applications.
+          </p>
         </div>
       </div>
     </div>
   </header>
+
+<!-- main content -->
   <main>
-    <p class="space"></p>
     <section id="about" class="container">
       <h1 class="title pt-1 text-center">About</h1>
       <div class="pt-3 gy-3 mx-auto m-0 row row-cols-1 row-cols-lg-3 row-cols-md-2">
-        <div class="col">
-          <div data-aos-duration="1500" data-aos="zoom-in-left" class="p-3 custom-card mx-auto text-center">
-            <img class="img-fluid m-3 w-75" src="imges/about-1.svg" alt="">
-            <h4 class="title">Skillset</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet.</p>
+
+        <!-- Skillset Card -->
+        <div class="container" id="card">
+          <div class="row">
+            <div class="col">
+              <div anim data-aos-duration="1500" data-aos="fade-right" class="custom-card p-3 mx-auto w-100" style="width: 18rem;">
+                <img src="images/skills.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Skill Set</h4>
+                </div>
+                <ul class="list">
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator</li>
+                  <li>DaVinci Resolve</li>
+                  <li>Microsoft Office</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <div class="col">
-          <div anim data-aos-duration="1500" data-aos="fade-down" class="p-3 custom-card mx-auto text-center">
-            <img class="img-fluid m-3 w-75" src="imges/about-2.svg" alt="">
-            <h4 class="title">Education</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet.</p>
+        <!-- Education Card -->
+        <div class="container" id="card">
+          <div class="row">
+            <div class="col">
+              <div anim data-aos-duration="1500" data-aos="fade-up" class="custom-card p-3 mx-auto w-100" style="width: 18rem;">
+                <img src="images/education.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Education</h4>
+                </div>
+                <ul class="list">
+                  <li>Graduated Primary Education at Emmanuel Christian School City of Santa Rosa (2011-2017)   </li>
+                  <li>Graduated Secondary Education (STEM) at The Canossa School Inc. Santa Rosa (2017-2023)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div data-aos-duration="1500" data-aos="fade-up" class="p-3 custom-card mx-auto text-center">
-            <img class="img-fluid m-3 w-75" src="imges/about-3.svg" alt="">
-            <h4 class="title">Experience</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet.</p>
+        <!-- Experience Card -->
+        <div class="container" id="card">
+          <div class="row">
+            <div class="col">
+              <div anim data-aos-duration="1500" data-aos="fade-down" class="custom-card p-3 mx-auto w-100" style="width: 18rem;">
+                <img src="images/experience.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">Experience</h4>
+                </div>
+                <ul class="list">
+                  <li>Worked as an Assisstant Web Developer at Facebook</li>
+                  <li>Worked as a Full Stack Web Developer at Apple</li>
+                  <li>Worked as a Software Developer at FEU</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
   </main>
+<!-- end of main content -->
 
-  <!-- footer  -->
-  <footer class="p-5">
-    <div class="d-flex justify-content-center align-items-center">
-      <a href="https://www.facebook.com/zedrikdyy"><i class="px-2 fs-2 fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/zedrikdy/"><i class="px-2 fs-2 fab fa-instagram"></i></a>
-      <a href="https://github.com/Kaatori-san/ccs5technical2"><i class="px-2 fs-2 fab fa-github"></i></a>
-    </div>
-  </footer>
+<!-- footer  -->
+<footer class="p-5">
+  <div class="d-flex justify-content-center align-items-center">
+    <a href="https://www.facebook.com/zedrikdyy"><i class="px-2 fs-2 fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/zedrikdy/"><i class="px-2 fs-2 fab fa-instagram"></i></a>
+    <a href="https://github.com/Kaatori-san/ccs5technical2"><i class="px-2 fs-2 fab fa-github"></i></a>
+  </div>
+</footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-
-    <!-- <script></script> -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <!-- initialize animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
-
+<!-- end of body -->
 </html>
