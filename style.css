@@ -30,6 +30,7 @@
 .title{
     color: #65000b;
     text-align: center;
+    margin-top: 10rem;
 }
 #home{
     margin-top: 3rem;
@@ -72,6 +73,15 @@ footer i:hover{
 .space{
     margin-bottom: 15rem;
 }
-#about{
-    margin-top: 15rem;
+.carousel-item img{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-height: 875px;
+    max-width: 475px;
+}
+
+p #home,#about,#projects{
+    margin-top: 3rem;
+    color: whitesmoke;
 }
