@@ -6,8 +6,12 @@
     -moz-appearance:  none;
     appearance:  none;
 }
+#nameIntro{
+    font-size: 7vmax;
+    font-weight: bold;   
+}
 .custom-nav{
-    .navbar-inner{
+    .navbar{
         background: #65000b;
         width: 100%;
     }
