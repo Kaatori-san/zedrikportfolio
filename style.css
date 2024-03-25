@@ -10,6 +10,12 @@
     font-size: 7vmax;
     font-weight: bold;   
 }
+.custom-nav{
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+    position: fixed;
+    width: 100%;
+}
 .custom-nav .navbar{
     background: #65000b;
     width: 100%;
