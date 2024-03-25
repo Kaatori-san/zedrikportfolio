@@ -10,17 +10,15 @@
     font-size: 7vmax;
     font-weight: bold;   
 }
-.custom-nav{
-    .navbar{
-        background: #65000b;
-        width: 100%;
-    }
-    .navbar-brand{
-        margin-left: 5%;
-    }
-    #navbarNavAltMarkup{
-        margin-right: 5rem;
-    }
+.custom-nav .navbar{
+    background: #65000b;
+    width: 100%;
+}
+.custom-nav .navbar-brand{
+    margin-left: 5%;
+}
+#navbarNavAltMarkup{
+    margin-right: 5rem;
 }
 .logo{
     height: 40px;
@@ -29,7 +27,6 @@
 
 .row{
     margin: 0 !important;
-
 }
 .title{
     color: #65000b;
@@ -82,7 +79,7 @@ footer i:hover{
     max-width: 350px;
 }
 
-p #home,#about,#projects{
+p#home, p#about, p#projects{
     margin-top: 3rem;
     color: whitesmoke;
 }
